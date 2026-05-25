@@ -1,0 +1,15 @@
+{
+  "name": "nft-mint-bot",
+  "version": "1.0.0",
+  "description": "Bot yang posting ke X saat ada NFT mint di Ethereum",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node --watch bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "twitter-api-v2": "^1.17.0"
+  }
+}
