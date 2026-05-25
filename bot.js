@@ -75,7 +75,7 @@ async function flushContract(contractAddress) {
     `<i>(Sent: ${timestamp})</i>`
   ].join("\n");
 
-  if (data.mints < 20) { console.log("[SKIP]", contractAddress, "| only", data.mints, "mints"); return; }
+  if (data.mints < 10) { console.log("[SKIP]", contractAddress, "| only", data.mints, "mints"); return; }
   console.log("[MINT]", meta.name, "|", data.minters.size, "minters |", data.mints, "mints");
   await sendTelegram(text);
 }
